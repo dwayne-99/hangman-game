@@ -99,6 +99,7 @@ while not end_of_game:
 The game loop starts with a while loop that continues until end_of_game becomes True (line 83)
 Inside the loop, the player is asked to guess a letter using input(), and the guess is converted to lowercase (line 84)
 The code checks if the guessed letter is in the chosen_word. If it is, the blanks list is updated with the guessed letter using a for loop (lines 85-89)
+
 If the guessed letter is not in the chosen_word, the lives variable is decremented by 1, and the remaining number of lives is printed (lines 90-92)
 If the lives variable reaches 0, end_of_game is set to True, and the losing message is printed (lines 93-95)
 The updated state of the blanks is printed using print(f"{' '.join(blanks)}") (line 96)
@@ -111,5 +112,5 @@ The updated state of the blanks is printed using print(f"{' '.join(blanks)}") (l
 # Checks if all the letters have been guessed correctly by checking if there are no more underscores "_" in the blanks list.
 # If all letters are guessed, end_of_game is set to True, and the winning message is printed.
   
-print(stages[lives])
+  print(stages[lives])
 # Finally, the corresponding hangman stage based on the remaining lives is printed
